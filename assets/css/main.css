@@ -29,6 +29,86 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+/* section header */
+
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .about-container{
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  gap: 10rem;
+}
+
+.about img{
+  width: 30vw;
+  border-radius: 50%;
+}
+
+.info-box{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.info-box h3{
+	color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.info-box h1{
+	color: white;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.info-box h2{
+	color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+
+.btn-group{
+  display: flex;
+	color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: 0.8;
+  gap: 1rem;
+}
+
+.btn{
+  border-radius: 3rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid white;
+  cursor: pointer;
+  font-weight: bold;
+  text-wrap: nowrap;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover{
+  background-color: white;
+  color: blue;
+}
+
+
+
+
+
+/* end */
+
 body {
 	line-height: 1;
 }
@@ -567,6 +647,11 @@ input, select, textarea {
 
 		@media screen and (max-width: 1680px) {
 
+			/* ini about */
+			.about .about-container{
+				gap: 3rem;
+			}
+
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -811,6 +896,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1280px) {
+
+			.about .about-container{
+				gap: 3rem;
+			}
 
 			.row {
 				display: flex;
@@ -1057,6 +1146,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
+			.about .about-container{
+				gap: 3rem;
+			}
+
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1301,6 +1394,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+
+			.about-container{
+				flex-direction: column;
+			}
 
 			.row {
 				display: flex;
@@ -1547,6 +1644,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
+			.about-container img{
+				width: 80vw;
+			}
+
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1791,6 +1892,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 360px) {
+
+			.about-container img{
+				width: 80vw;
+			}
 
 			.row {
 				display: flex;
@@ -2165,6 +2270,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
+			.about-container{
+				flex-direction: column;
+			}
+
 			input[type="submit"],
 			input[type="reset"],
 			input[type="button"],
@@ -2323,6 +2432,10 @@ input, select, textarea {
 	}
 
 		@media screen and (max-width: 980px) {
+
+			.about-container{
+				flex-direction: column;
+			}
 
 			label {
 				font-size: 0.9rem;
@@ -2652,6 +2765,10 @@ input, select, textarea {
 			}
 
 		@media screen and (max-width: 736px) {
+
+			.about-container{
+				flex-direction: column;
+			}
 
 			.image.fit {
 				margin: 2rem 0;

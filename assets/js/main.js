@@ -4,6 +4,25 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+// script about
+
+function downloadCV() {
+	const link = document.createElement('a');
+	link.href = 'images/img/CV.pdf';
+	link.download = 'Heru_Lobarto_CV.pdf'; 
+	link.click();
+}
+
+// Fungsi untuk tombol Contact
+  // Fungsi untuk membuka WhatsApp
+  function openWhatsApp() {
+    const phone = "62895385385569"; 
+    const message = "Halo, saya tertarik untuk menghubungi Anda.";
+    const waURL = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(waURL, '_blank');
+  }
+
+
 (function($) {
 
 	var	$window = $(window),

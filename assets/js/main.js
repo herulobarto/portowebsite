@@ -16,7 +16,7 @@ function downloadCV() {
 // Fungsi untuk tombol Contact
   // Fungsi untuk membuka WhatsApp
   function openWhatsApp() {
-    const phone = "62895385385569"; 
+    const phone = "6289654045690"; 
     const message = "Halo, saya tertarik untuk menghubungi Anda.";
     const waURL = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(waURL, '_blank');
